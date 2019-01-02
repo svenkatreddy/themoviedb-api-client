@@ -1,5 +1,5 @@
 {
-  "name": "themoviedb-client",
+  "name": "themoviedb-api-client",
   "description": "Library for interacting with themoviedb.com API",
   "version": "1.0.0",
   "scripts": {
