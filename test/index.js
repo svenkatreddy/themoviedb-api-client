@@ -29,47 +29,12 @@ describe('moviedb', function() {
 
 	// basic movie search
 	it('should search for Zoolander', function(done) {
-		api.searchMovie({query: 'Zoolander' }, function(err, res){
-			if (err) done(err);
-			// console.log(res);
-			res.should.be.an('object');
-			res.should.have.property('results');
-			res.results.should.be.an('array');
+		api.searchMovie({query: 'Zoolander' }).then(function(res){
+			res.body.should.be.an('object');
+			res.body.should.have.property('results');
+			res.body.results.should.be.an('array');
 			done();
 		});
 	});
-
-	it('should get the tv shows airing today', function(done) {
-		api.tvAiringToday(function(err, res) {
-			if (err) done(err);
-			// console.log(data);
-			res.should.be.an('object');
-			res.should.have.property('results');
-			res.results.should.be.an('array');
-			done();
-		});
-	});
-
-	it('should get the tv shows OnTheAir', function(done) {
-		api.tvOnTheAir(function(err, res) {
-			if (err) done(err);
-			// console.log(data);
-			res.should.be.an('object');
-			res.should.have.property('results');
-			res.results.should.be.an('array');
-			done();
-		});
-	});
-
-    it ('should get the movie release dates', function(done) {
-        api.movieReleaseDates({id: 209112}, function(err, res) {
-            if (err) done(err);
-			res.should.be.an('object');
-			res.should.have.property('results');
-			res.results.should.be.an('array');
-            assert.equal(res.id, 209112);
-            done();
-        });
-    });
 
 });

@@ -1,13 +1,13 @@
 {
-  "name": "moviedb",
+  "name": "themoviedb-client",
   "description": "Library for interacting with themoviedb.com API",
-  "version": "0.2.10",
+  "version": "1.0.0",
   "scripts": {
     "test": "clear; make test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/impronunciable/moviedb.git"
+    "url": "git+https://github.com/svenkatreddy/moviedb.git"
   },
   "license": "MIT",
   "keywords": [
@@ -16,16 +16,16 @@
     "tmdb"
   ],
   "bugs": {
-    "url": "https://github.com/impronunciable/moviedb/issues"
+    "url": "https://github.com/svenkatreddy/moviedb/issues"
   },
-  "homepage": "https://github.com/impronunciable/moviedb#readme",
+  "homepage": "https://github.com/svenkatreddy/moviedb#readme",
   "directories": {
     "lib": "./lib"
   },
   "main": "index.js",
-  "author": "Dan Zajdband <dan.zajdband@gmail.com>",
+  "author": "Venkat Reddy",
   "dependencies": {
-    "superagent": "^2.3.0"
+    "superagent": "^4.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
