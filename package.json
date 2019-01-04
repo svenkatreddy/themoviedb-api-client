@@ -1,13 +1,13 @@
 {
   "name": "themoviedb-api-client",
   "description": "Library for interacting with themoviedb.com API",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "scripts": {
     "test": "clear; make test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svenkatreddy/moviedb.git"
+    "url": "git+https://github.com/svenkatreddy/themoviedb-api-client.git"
   },
   "license": "MIT",
   "keywords": [
@@ -16,9 +16,9 @@
     "tmdb"
   ],
   "bugs": {
-    "url": "https://github.com/svenkatreddy/moviedb/issues"
+    "url": "https://github.com/svenkatreddy/themoviedb-api-client/issues"
   },
-  "homepage": "https://github.com/svenkatreddy/moviedb#readme",
+  "homepage": "https://github.com/svenkatreddy/themoviedb-api-client#readme",
   "directories": {
     "lib": "./lib"
   },
