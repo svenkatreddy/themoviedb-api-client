@@ -15,11 +15,11 @@ npm install themoviedb-api-client --save
 
 Require MovieDB and provide your themoviedb.org API KEY
 ```js
-const MovieDB = require('themoviedb-api-client"')('your api key');
+const tmdb = require('themoviedb-api-client"')('your api key');
 ```
 Use the api methods as you want, for example:
 ```js
-mdb.searchMovie({ query: 'Alien' }).then((res) => {
+tmdb.searchMovie({ query: 'Alien' }).then((res) => {
   console.log(res.body);
 })
 .catch(function(error) {
@@ -28,7 +28,7 @@ mdb.searchMovie({ query: 'Alien' }).then((res) => {
 ```
 or
 ```js
-mdb.movieInfo({ id: 666}).then((res) => {
+tmdb.movieInfo({ id: 666}).then((res) => {
   console.log(res.body);
 })
 .catch(function(error) {
