@@ -9,25 +9,25 @@ mdb.movieInfo({id: 11})
     console.log(error)
   });
   
-mdb.miscPopularMovies({}).then(function(res){
-  console.log('--------','ninja');
-  console.log(JSON.stringify(res.body));
-})
-.catch(function(error) {
-  console.log(error)
-});
+// mdb.miscPopularMovies({}).then(function(res){
+//   console.log('--------','ninja');
+//   console.log(JSON.stringify(res.body));
+// })
+// .catch(function(error) {
+//   console.log(error)
+// });
 
-mdb.searchMovie({ query: 'Alien' }).then((res) => {
-  console.log(res.body);
-})
-.catch(function(error) {
-  console.log(error)
-});
+// mdb.searchMovie({ query: 'Alien' }).then((res) => {
+//   console.log(res.body);
+// })
+// .catch(function(error) {
+//   console.log(error)
+// });
 
 
-mdb.movieInfo({ id: 666}).then((res) => {
-  console.log(res.body);
-})
-.catch(function(error) {
-  console.log(error)
-});
+// mdb.movieInfo({ id: 666}).then((res) => {
+//   console.log(res.body);
+// })
+// .catch(function(error) {
+//   console.log(error)
+// });
